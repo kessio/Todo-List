@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
+//const ESLintPlugin = require('eslint-webpack-plugin');
+//const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -12,8 +12,8 @@ module.exports = {
     new HtmlWebpackPlugin({
      template: './src/index.html'
     }),
-    new ESLintPlugin(),
-    new StylelintPlugin(),
+   // new ESLintPlugin(),
+   // new StylelintPlugin(),
 
   ],
 
@@ -31,6 +31,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
