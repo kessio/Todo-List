@@ -2,11 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello webpack!</h1>
-    <h3>Testing template</h3>
+   <section class="todolist">
+    <div class="list-container">
+        <h2 class="heading">Today's Todo</h2>
+        <div class="list-group">
+            <input type="text" id="enter-todo" placeholder="Add to your list...">
+        </div>
+        <div class="list-group">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Listen to music</label>
+        </div>
+        <div class="list-group">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Learn JavaScript</label>
+        </div>
+        <div class="list-group">
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3" class="checkbox-label">Watch a movie</label>
+        </div>
+        <div class="list-group">
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4">Read emails</label>
+        </div>
+        <div class="clear">
+            <p>Clear All completed</p>
+        </div>   
+    </div>
+   </section>
 </body>
 </html>

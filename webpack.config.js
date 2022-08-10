@@ -10,13 +10,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'To do List',
+     template: './src/index.html'
     }),
     new ESLintPlugin(),
     new StylelintPlugin(),
 
   ],
- 
+
   devServer: {
     static: './dist',
   },
