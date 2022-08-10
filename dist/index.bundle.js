@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(236, 231, 231);\r\n  \r\n}\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n}\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n\r\n}\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n  height: fit-content;\r\n}\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n.clear {\r\n  background-color: rgb(202, 197, 197);\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AACA;EACE,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,oCAAoC;;AAEtC;AACA;EACE,2CAA2C;EAC3C,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;AACf;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;;AAEjB;AACA;EACE,uBAAuB;EACvB,kCAAkC;EAClC,UAAU;EACV,mBAAmB;AACrB;AACA;EACE,2CAA2C;EAC3C,aAAa;AACf;AACA;EACE,oCAAoC;EACpC,YAAY;EACZ,kBAAkB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');\r\n* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(236, 231, 231);\r\n  \r\n}\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n}\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n\r\n}\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n  height: fit-content;\r\n}\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n.clear {\r\n  background-color: rgb(202, 197, 197);\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n  \r\n}\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n}\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n\r\n}\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n  height: fit-content;\r\n}\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n.refresh {\r\n  float: right;\r\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AACA;EACE,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,4CAA4C;;AAE9C;AACA;EACE,2CAA2C;EAC3C,aAAa;AACf;AACA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;EACb,eAAe;EACf,kBAAkB;AACpB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;;AAEjB;AACA;EACE,uBAAuB;EACvB,kCAAkC;EAClC,UAAU;EACV,mBAAmB;AACrB;AACA;EACE,2CAA2C;EAC3C,aAAa;EACb,eAAe;EACf,gBAAgB;AAClB;AACA;EACE,oCAAoC;EACpC,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;AACd","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');\r\n* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n  \r\n}\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n}\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n\r\n}\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n  height: fit-content;\r\n}\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n.refresh {\r\n  float: right;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -538,8 +538,98 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
+/* harmony import */ var _lists_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lists.js */ "./src/lists.js");
+/* harmony import */ var _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/refresh.png */ "./src/imgs/refresh.png");
 
 
+
+
+(0,_lists_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+const imageRefresh = () => {
+  const element = document.querySelector('.refresh');
+
+ // Add the image to our existing div.
+ const myIcon = new Image();
+ myIcon.src = _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__;
+
+ element.appendChild(myIcon);
+
+  return element;
+}
+imageRefresh();
+
+
+/***/ }),
+
+/***/ "./src/lists.js":
+/*!**********************!*\
+  !*** ./src/lists.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imgs/menu.png */ "./src/imgs/menu.png");
+
+const renderList = () => {
+    const todoList = [
+        {
+        description: "Read Books",
+        completed: false,
+        index: 1,
+    },
+    {
+        description: "Listen to Music",
+        completed: false,
+        index: 2,
+    },
+    {
+        description: "Learn Javascript",
+        completed: false,
+        index: 3,
+    },
+    {
+        description: "Wash the dishes",
+        completed: false,
+        index: 4,
+    },
+];
+
+todoList.forEach(list => {
+    const listContainer = document.querySelector('.todo-list');
+    listContainer.innerHTML += `
+    <div class="list-group">
+            <input type="checkbox">
+            <label for="checkbox">${list.description}</label>
+            <div class="menu"><img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}"></div>
+        </div>`    
+});
+
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderList);
+
+/***/ }),
+
+/***/ "./src/imgs/menu.png":
+/*!***************************!*\
+  !*** ./src/imgs/menu.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cc8e8dfe06b484d390ea.png";
+
+/***/ }),
+
+/***/ "./src/imgs/refresh.png":
+/*!******************************!*\
+  !*** ./src/imgs/refresh.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d926ef8bc5f432678b9c.png";
 
 /***/ })
 

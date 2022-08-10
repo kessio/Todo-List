@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(236, 231, 231);
+  background-color: rgba(236, 231, 231, 0.836);
   
 }
 .heading {
@@ -16,6 +16,8 @@ body {
   width: 100%;
   border: none;
   outline: none;
+  font-size: 20px;
+  font-style: italic;
 }
 .todolist {
   display: flex;
@@ -33,9 +35,18 @@ body {
 .list-group {
   border-bottom: 3px solid rgb(223, 219, 219);
   padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
 }
 .clear {
-  background-color: rgb(202, 197, 197);
+  background-color: rgb(230, 224, 224);
   padding: 5px;
   text-align: center;
+  cursor: pointer;
+}
+.menu {
+  float: right;
+}
+.refresh {
+  float: right;
 }
