@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      title: 'To do List',
     }),
     new ESLintPlugin(),
     new StylelintPlugin(),
