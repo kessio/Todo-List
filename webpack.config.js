@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const ESLintPlugin = require('eslint-webpack-plugin');
-//const StylelintPlugin = require('stylelint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -13,7 +13,7 @@ module.exports = {
      template: './src/index.html'
     }),
    // new ESLintPlugin(),
-   // new StylelintPlugin(),
+    new StylelintPlugin(),
 
   ],
 
