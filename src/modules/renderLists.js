@@ -1,4 +1,5 @@
 import menu from '../imgs/menu.png';
+import bin from '../imgs/bin.png';
 import getTodo from './getTodo.js';
 
 const renderList = () => {
@@ -11,7 +12,7 @@ const renderList = () => {
     <div class="list-group">
             <input type="checkbox">
             <label for="checkbox">${list.description}</label>
-            <div class="menu"><img src="${menu}"></div>
+            <div class="menu"><img src="${menu}" id="${list.index}" class="menu-img"> <img src="${bin}" class="bin" id="${list.index}"></div>
         </div>`;
   });
 } 

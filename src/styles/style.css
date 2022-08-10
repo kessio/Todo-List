@@ -48,7 +48,10 @@ body {
   text-align: center;
   cursor: pointer;
 }
-
+.bin {
+  float: right;
+ display: none;
+}
 .menu {
   float: right;
 }
