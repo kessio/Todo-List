@@ -538,87 +538,91 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _lists_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lists.js */ "./src/lists.js");
+/* harmony import */ var _modules_renderLists_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/renderLists.js */ "./src/modules/renderLists.js");
 /* harmony import */ var _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/refresh.png */ "./src/imgs/refresh.png");
 
 
 
+//import getTodo from './modules/getTodo.js';
 
-(0,_lists_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+//console.log(getTodo());
+
+(0,_modules_renderLists_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
 const imageRefresh = () => {
-const element = document.querySelector('.refresh');
+  const element = document.querySelector('.refresh');
 
- const myIcon = new Image();
- myIcon.src = _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__;
+  const myIcon = new Image();
+  myIcon.src = _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__;
 
- element.appendChild(myIcon);
+  element.appendChild(myIcon);
 
   return element;
-}
+};
 imageRefresh();
 
 
 /***/ }),
 
-/***/ "./src/lists.js":
-/*!**********************!*\
-  !*** ./src/lists.js ***!
-  \**********************/
+/***/ "./src/modules/getTodo.js":
+/*!********************************!*\
+  !*** ./src/modules/getTodo.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imgs/menu.png */ "./src/imgs/menu.png");
+const getTodo = () => {
+    let todo;
+    if(localStorage.getItem('todo') === null) {
+        todo = [];   
+    } else {
+        todo = JSON.parse(localStorage.getItem('todo'));
+    }
+      let todosize = todo.length;
+    return {todo, todosize};
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getTodo);
+
+/***/ }),
+
+/***/ "./src/modules/renderLists.js":
+/*!************************************!*\
+  !*** ./src/modules/renderLists.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../imgs/refresh.png */ "./src/imgs/refresh.png");
+/* harmony import */ var _getTodo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getTodo.js */ "./src/modules/getTodo.js");
+
+
 
 const renderList = () => {
-    const todoList = [
-        {
-        description: "Read Books",
-        completed: false,
-        index: 1,
-    },
-    {
-        description: "Listen to Music",
-        completed: false,
-        index: 2,
-    },
-    {
-        description: "Learn Javascript",
-        completed: false,
-        index: 3,
-    },
-    {
-        description: "Wash the dishes",
-        completed: false,
-        index: 4,
-    },
-];
-
-todoList.forEach(list => {
+ const todoList = (0,_getTodo_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+ const mylist = todoList.todo;
+ //console.log(todoList);
+ if(todoList.todosize === 0){
+  mylist.forEach((list) => {
     const listContainer = document.querySelector('.todo-list');
     listContainer.innerHTML += `
     <div class="list-group">
             <input type="checkbox">
             <label for="checkbox">${list.description}</label>
-            <div class="menu"><img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}"></div>
-        </div>`    
-});
-
+            <div class="menu"><img src="${_imgs_refresh_png__WEBPACK_IMPORTED_MODULE_0__}"></div>
+        </div>`;
+  });
+}else{
+  listContainer.innerHTML = 'You have no todo list';
 }
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderList);
-
-/***/ }),
-
-/***/ "./src/imgs/menu.png":
-/*!***************************!*\
-  !*** ./src/imgs/menu.png ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "cc8e8dfe06b484d390ea.png";
 
 /***/ }),
 

@@ -1,30 +1,12 @@
-import menu from './imgs/menu.png';
+import menu from '../imgs/refresh.png';
+import getTodo from './getTodo.js';
 
 const renderList = () => {
-  const todoList = [
-    {
-      description: 'Read Books',
-      completed: false,
-      index: 1,
-    },
-    {
-      description: 'Listen to Music',
-      completed: false,
-      index: 2,
-    },
-    {
-      description: 'Learn Javascript',
-      completed: false,
-      index: 3,
-    },
-    {
-      description: 'Wash the dishes',
-      completed: false,
-      index: 4,
-    },
-  ];
-
-  todoList.forEach((list) => {
+ const todoList = getTodo();
+ const mylist = todoList.todo;
+ //console.log(todoList);
+ if(todoList.todosize === 0){
+  mylist.forEach((list) => {
     const listContainer = document.querySelector('.todo-list');
     listContainer.innerHTML += `
     <div class="list-group">
@@ -33,5 +15,6 @@ const renderList = () => {
             <div class="menu"><img src="${menu}"></div>
         </div>`;
   });
+}
 };
 export default renderList;

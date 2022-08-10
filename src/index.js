@@ -1,6 +1,9 @@
 import './styles/style.css';
-import renderList from './lists.js';
+import renderList from './modules/renderLists.js';
 import refreshImg from './imgs/refresh.png';
+//import getTodo from './modules/getTodo.js';
+
+//console.log(getTodo());
 
 renderList();
 
