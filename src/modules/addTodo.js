@@ -1,7 +1,9 @@
-import TodoList from "./todoList";
-import getTodo from "./getTodo";
+import TodoList from "./todoList.js";
+import getTodo from "./getTodo.js";
 import setTodo from "./setTodo";
-import renderAddedList from "./renderAddedList";
+//import renderList from "./renderLists.js";
+import renderAddedList from "./renderAddedList.js";
+//import renderAddedList from "./renderAddedList";
 //import clearInput from "./clearInput";
 
 const addTodoBtn = () => {
@@ -15,7 +17,7 @@ input.addEventListener('keypress', (event) => {
         const index = list.todosize + 1;
         const todoList = new TodoList(description, completed, index);
         setTodo(todoList);
-        renderAddedList(todoList);  
+        renderAddedList(todoList);
     
     }
 });
