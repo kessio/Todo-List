@@ -16,6 +16,7 @@ const addTodoBtn = () => {
         const todoList = new TodoList(description, completed, index);
         setTodo(todoList);
         renderAddedList(todoList);
+        window.location.reload();
         document.querySelector('.save-todo').value = '';
       } else {
         document.querySelector('.emptylist').style.display = 'block';

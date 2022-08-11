@@ -7,17 +7,14 @@ const editTodo = (inputDiv) => {
       event.preventDefault();
       const description = input.value;
       const inputId = input.id;
-      const removeid = inputId.replace('input', '');
       const list = getTodo();
       const todoArray = list.todo;
-      const newlist = todoArray.filter((item) => parseInt(removeid, 10) !== item.index);
       const index = inputId.replace('input', '');
+      const newlist = todoArray.filter((item) => parseInt(index, 10) !== item.index);
       if (description !== '') {
-        const todoObject = { description, completed: false, index };
+        const mtindex = parseInt(index, 10);
+        const todoObject = { description, completed: false, index: mtindex };
         newlist.push(todoObject);
-        newlist.forEach((task, i) => {
-          task.index = i + 1;
-        });
         localStorage.setItem('todo', JSON.stringify(newlist));
         window.location.reload();
       } else {
