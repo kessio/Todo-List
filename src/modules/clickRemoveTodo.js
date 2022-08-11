@@ -9,7 +9,7 @@ const clickRemoveTodo = () => {
       const removeid = e.target.id;
       removeTodo(removeid);
       binBtn.parentElement.parentElement.parentElement.remove();
-       window.location.reload();
+      window.location.reload();
     });
   });
 };
