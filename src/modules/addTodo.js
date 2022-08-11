@@ -12,10 +12,14 @@ const addTodoBtn = () => {
       const completed = false;
       const list = getTodo();
       const index = list.todosize + 1;
-      const todoList = new TodoList(description, completed, index);
-      setTodo(todoList);
-      renderAddedList(todoList);
-      document.querySelector('.save-todo').value = '';
+      if (description !== '') {
+        const todoList = new TodoList(description, completed, index);
+        setTodo(todoList);
+        renderAddedList(todoList);
+        document.querySelector('.save-todo').value = '';
+      } else {
+        document.querySelector('.emptylist').style.display = 'block';
+      }
     }
   });
 };
