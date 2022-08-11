@@ -3,12 +3,12 @@ import bin from '../imgs/bin.png';
 import getTodo from './getTodo.js';
 
 const renderList = () => {
- const todoList = getTodo();
- const mylist = todoList.todo;
- if(todoList.todosize !== 0){
-  mylist.forEach((list) => {
-    const listContainer = document.querySelector('.todo-list');
-    listContainer.innerHTML += `
+  const todoList = getTodo();
+  const mylist = todoList.todo;
+  if (todoList.todosize !== 0) {
+    mylist.forEach((list) => {
+      const listContainer = document.querySelector('.todo-list');
+      listContainer.innerHTML += `
     <div class="list-group">
     <div class="list-cont">
             <input type="checkbox" id="checkbox-${list.index}">
@@ -18,7 +18,7 @@ const renderList = () => {
             </div>
             </div>
         </div>`;
-  });
-} 
+    });
+  }
 };
 export default renderList;

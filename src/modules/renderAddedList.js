@@ -4,9 +4,9 @@ import showEditTools from './showEditTools.js';
 import clickRemoveTodo from './clickRemoveTodo.js';
 
 const renderAddedList = (addedList) => {
-       const list = addedList;
-       const listContainer = document.querySelector('.todo-list');
-        listContainer.innerHTML += `
+  const list = addedList;
+  const listContainer = document.querySelector('.todo-list');
+  listContainer.innerHTML += `
         <div class="list-group">
         <div class="list-cont">
             <input type="checkbox" id="checkbox-${list.index}">
@@ -14,8 +14,8 @@ const renderAddedList = (addedList) => {
             <div class="menu"><img src="${menu}" class="menu-img" id="menu-${list.index}"> <img src="${bin}" class="bin" id="${list.index}"></div>
             </div>
         </div>`;
-            
-        showEditTools();
-        clickRemoveTodo();  
-   };
-   export default renderAddedList;
+
+  showEditTools();
+  clickRemoveTodo();
+};
+export default renderAddedList;
