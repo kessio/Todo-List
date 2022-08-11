@@ -13,15 +13,18 @@ body {
   border-bottom: 3px solid rgb(223, 219, 219);
   padding: 15px;
 }
+
 input {
   border: none;
   outline: none;
   font-size: 20px;
 }
+
 .save-todo {
   width: 93%;
   padding-left: 5px;
 }
+
 .list-cont {
   display: flex;
 }
@@ -57,10 +60,12 @@ input {
   text-align: center;
   cursor: pointer;
 }
+
 .bin {
   float: right;
- display: none;
+  display: none;
 }
+
 .menu {
   float: right;
 }
@@ -68,6 +73,7 @@ input {
 .refresh {
   float: right;
 }
+
 [contenteditable] {
   outline: none;
 }
