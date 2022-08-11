@@ -71,3 +71,8 @@ input {
 [contenteditable] {
   outline: none;
 }
+
+.emptylist {
+  display: none;
+  color: red;
+}

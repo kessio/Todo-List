@@ -8,9 +8,8 @@ const clickRemoveTodo = () => {
        const binBtn = e.target;
         const removeid = e.target.id;
         removeTodo(removeid);
-        binBtn.parentElement.parentElement.parentElement.remove();  
-           
-       
+        binBtn.parentElement.parentElement.parentElement.remove();   
+       location.reload();    
 })
 
      })

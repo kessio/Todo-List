@@ -15,23 +15,17 @@ const editTodo = (inputDiv) => {
             const todoArray = list.todo;
             const newlist = todoArray.filter((item) => parseInt(removeid, 10) !== item.index);
             const index = inputId.replace('input','');
-            const todoObject = {description: description, completed: false, index: index};
-            newlist.push(todoObject);
-            const newarray = newlist.map((item, i) => (item.index = (i + 1)) && item);
-            localStorage.setItem('todo', JSON.stringify(newarray));
-            location.reload();
-           /* const todoList = new TodoList(description, completed, index);
-           // console.log(todoList);
-            if(description != ''){
-            setTodo(todoList);
-             input.parentElement.remove();
-            renderAddedList(todoList);
-            document.querySelector('.save-todo').value = '';
+            if(description !== ''){
+                const todoObject = {description: description, completed: false, index: index};
+                newlist.push(todoObject);
+                const newarray = newlist.map((item, i) => (item.index = (i + 1)) && item);
+                localStorage.setItem('todo', JSON.stringify(newarray));
+                location.reload();
             }else{
-                console.log("It can not be blank")
+                document.querySelector('.emptylist').style.display = "block";
+
             }
-            */
-            
+           
         }
     })
 }
