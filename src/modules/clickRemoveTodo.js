@@ -1,14 +1,19 @@
-import removeTodo from "./removeTodo.js";
+ import removeTodo from "./removeTodo.js";
 
-const clickRemoveTodo = (binElement) => {
-  //  const deleteBtn = document.querySelectorAll('.menu-img');
-      binElement.addEventListener('click', (e) => {
-         const binBtn = e.target;
-         const removeid = e.target.id;
-         removeTodo(removeid);
-         binBtn.parentElement.parentElement.remove();
-        
+const clickRemoveTodo = () => {
+     const deleteBtn = document.querySelectorAll('.bin');
+     deleteBtn.forEach((element) => {
+      element.addEventListener('click', (e) => {
+        e.preventDefault();
+       const binBtn = e.target;
+        const removeid = e.target.id;
+        removeTodo(removeid);
+        binBtn.parentElement.parentElement.parentElement.remove();  
+           
+       
 })
+
+     })
 
 }
 export default clickRemoveTodo;

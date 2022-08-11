@@ -7,18 +7,22 @@ import renderAddedList from "./renderAddedList.js";
 //import clearInput from "./clearInput";
 
 const addTodoBtn = () => {
-const input = document.getElementById('enter-todo');
+const input = document.querySelector('.save-todo');
 input.addEventListener('keypress', (event) => {
     if(event.key === "Enter"){
         event.preventDefault();
-        const description = document.getElementById('enter-todo').value;
+        const description = document.querySelector('.save-todo').value;
         const completed = false;
         const list = getTodo();
         const index = list.todosize + 1;
         const todoList = new TodoList(description, completed, index);
+        if(description != ''){
         setTodo(todoList);
         renderAddedList(todoList);
-    
+        document.querySelector('.save-todo').value = '';
+        }else{
+            console.log("It can not be blank")
+        }
     }
 });
 }

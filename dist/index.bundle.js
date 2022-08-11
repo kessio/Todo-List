@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n}\r\n\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n}\r\n\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n}\r\n\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n}\r\n\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.bin {\r\n  float: right;\r\n display: none;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n\r\n.refresh {\r\n  float: right;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAEA;EACE,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,4CAA4C;AAC9C;;AAEA;EACE,2CAA2C;EAC3C,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;EACb,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,kCAAkC;EAClC,UAAU;AACZ;;AAEA;EACE,2CAA2C;EAC3C,aAAa;EACb,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,YAAY;CACb,aAAa;AACd;AACA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');\r\n\r\n* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n}\r\n\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\n\r\n#enter-todo {\r\n  width: 100%;\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n  font-style: italic;\r\n}\r\n\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n}\r\n\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n}\r\n\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.bin {\r\n  float: right;\r\n display: none;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n\r\n.refresh {\r\n  float: right;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n}\r\n\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\ninput {\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n}\r\n.save-todo {\r\n  width: 93%;\r\n  padding-left: 5px;\r\n}\r\n.list-cont {\r\n  display: flex;\r\n}\r\n\r\n#enter-todo {\r\n  width: 100%;\r\n  font-style: italic;\r\n}\r\n\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n}\r\n\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n}\r\n\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 20px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.bin {\r\n  float: right;\r\n display: none;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n\r\n.refresh {\r\n  float: right;\r\n}\r\n[contenteditable] {\r\n  outline: none;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAEA;EACE,UAAU;EACV,kCAAkC;AACpC;;AAEA;EACE,4CAA4C;AAC9C;;AAEA;EACE,2CAA2C;EAC3C,aAAa;AACf;AACA;EACE,YAAY;EACZ,aAAa;EACb,eAAe;AACjB;AACA;EACE,UAAU;EACV,iBAAiB;AACnB;AACA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,kCAAkC;EAClC,UAAU;AACZ;;AAEA;EACE,2CAA2C;EAC3C,aAAa;EACb,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,oCAAoC;EACpC,YAAY;EACZ,kBAAkB;EAClB,eAAe;AACjB;AACA;EACE,YAAY;CACb,aAAa;AACd;AACA;EACE,YAAY;AACd;;AAEA;EACE,YAAY;AACd;AACA;EACE,aAAa;AACf","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');\r\n\r\n* {\r\n  padding: 0;\r\n  font-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n  background-color: rgba(236, 231, 231, 0.836);\r\n}\r\n\r\n.heading {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 15px;\r\n}\r\ninput {\r\n  border: none;\r\n  outline: none;\r\n  font-size: 20px;\r\n}\r\n.save-todo {\r\n  width: 93%;\r\n  padding-left: 5px;\r\n}\r\n.list-cont {\r\n  display: flex;\r\n}\r\n\r\n#enter-todo {\r\n  width: 100%;\r\n  font-style: italic;\r\n}\r\n\r\n.todolist {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  margin-top: 10%;\r\n}\r\n\r\n.list-container {\r\n  background-color: white;\r\n  box-shadow: 10px 5px 10px 5px grey;\r\n  width: 50%;\r\n}\r\n\r\n.list-group {\r\n  border-bottom: 3px solid rgb(223, 219, 219);\r\n  padding: 20px;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n}\r\n\r\n.clear {\r\n  background-color: rgb(230, 224, 224);\r\n  padding: 5px;\r\n  text-align: center;\r\n  cursor: pointer;\r\n}\r\n.bin {\r\n  float: right;\r\n display: none;\r\n}\r\n.menu {\r\n  float: right;\r\n}\r\n\r\n.refresh {\r\n  float: right;\r\n}\r\n[contenteditable] {\r\n  outline: none;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -541,18 +541,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_renderLists_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/renderLists.js */ "./src/modules/renderLists.js");
 /* harmony import */ var _imgs_refresh_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/refresh.png */ "./src/imgs/refresh.png");
 /* harmony import */ var _modules_addTodo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/addTodo.js */ "./src/modules/addTodo.js");
-/* harmony import */ var _modules_showEditTools_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/showEditTools.js */ "./src/modules/showEditTools.js");
+/* harmony import */ var _modules_clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/clickRemoveTodo.js */ "./src/modules/clickRemoveTodo.js");
+/* harmony import */ var _modules_showEditTools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/showEditTools.js */ "./src/modules/showEditTools.js");
 
 
 
 
-////import clickRemoveTodo from './modules/clickRemoveTodo.js';
 
+
+//import renderAddedList from './modules/renderAddedList.js';
 
 (0,_modules_renderLists_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_addTodo_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
-//clickRemoveTodo();
-(0,_modules_showEditTools_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
+(0,_modules_showEditTools_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
+(0,_modules_clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
+
+
 
 const imageRefresh = () => {
   const element = document.querySelector('.refresh');
@@ -579,29 +583,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _todoList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todoList */ "./src/modules/todoList.js");
-/* harmony import */ var _getTodo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getTodo */ "./src/modules/getTodo.js");
+/* harmony import */ var _todoList_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todoList.js */ "./src/modules/todoList.js");
+/* harmony import */ var _getTodo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getTodo.js */ "./src/modules/getTodo.js");
 /* harmony import */ var _setTodo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./setTodo */ "./src/modules/setTodo.js");
-/* harmony import */ var _renderAddedList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./renderAddedList */ "./src/modules/renderAddedList.js");
+/* harmony import */ var _renderAddedList_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./renderAddedList.js */ "./src/modules/renderAddedList.js");
 
 
 
+//import renderList from "./renderLists.js";
 
+//import renderAddedList from "./renderAddedList";
 //import clearInput from "./clearInput";
 
 const addTodoBtn = () => {
-const input = document.getElementById('enter-todo');
+const input = document.querySelector('.save-todo');
 input.addEventListener('keypress', (event) => {
     if(event.key === "Enter"){
         event.preventDefault();
-        const description = document.getElementById('enter-todo').value;
+        const description = document.querySelector('.save-todo').value;
         const completed = false;
-        const list = (0,_getTodo__WEBPACK_IMPORTED_MODULE_1__["default"])();
+        const list = (0,_getTodo_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
         const index = list.todosize + 1;
-        const todoList = new _todoList__WEBPACK_IMPORTED_MODULE_0__["default"](description, completed, index);
+        const todoList = new _todoList_js__WEBPACK_IMPORTED_MODULE_0__["default"](description, completed, index);
+        if(description != ''){
         (0,_setTodo__WEBPACK_IMPORTED_MODULE_2__["default"])(todoList);
-        (0,_renderAddedList__WEBPACK_IMPORTED_MODULE_3__["default"])(todoList);  
-    
+        (0,_renderAddedList_js__WEBPACK_IMPORTED_MODULE_3__["default"])(todoList);
+        document.querySelector('.save-todo').value = '';
+        }else{
+            console.log("It can not be blank")
+        }
     }
 });
 }
@@ -620,22 +630,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _removeTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./removeTodo.js */ "./src/modules/removeTodo.js");
+ 
 
-
-const clickRemoveTodo = (binElement) => {
-  //  const deleteBtn = document.querySelectorAll('.menu-img');
-      binElement.addEventListener('click', (e) => {
-         const binBtn = e.target;
-         const removeid = e.target.id;
-         (0,_removeTodo_js__WEBPACK_IMPORTED_MODULE_0__["default"])(removeid);
-         binBtn.parentElement.parentElement.remove();
-        
+const clickRemoveTodo = () => {
+     const deleteBtn = document.querySelectorAll('.bin');
+     deleteBtn.forEach((element) => {
+      element.addEventListener('click', (e) => {
+        e.preventDefault();
+       const binBtn = e.target;
+        const removeid = e.target.id;
+        (0,_removeTodo_js__WEBPACK_IMPORTED_MODULE_0__["default"])(removeid);
+        binBtn.parentElement.parentElement.parentElement.remove();  
+           
+       
 })
+
+     })
 
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clickRemoveTodo);
 
 
+
+/***/ }),
+
+/***/ "./src/modules/editTodo.js":
+/*!*********************************!*\
+  !*** ./src/modules/editTodo.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _todoList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todoList */ "./src/modules/todoList.js");
+/* harmony import */ var _getTodo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getTodo.js */ "./src/modules/getTodo.js");
+/* harmony import */ var _setTodo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./setTodo */ "./src/modules/setTodo.js");
+/* harmony import */ var _renderAddedList_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./renderAddedList.js */ "./src/modules/renderAddedList.js");
+
+
+
+
+
+const editTodo = (inputDiv) => {
+    const input = inputDiv;
+    //const input = document.querySelector('.save-todo');
+    input.addEventListener('keypress', (event) => {
+        if(event.key === "Enter"){
+            event.preventDefault();
+            const description = input.value;
+            const completed = false;
+            const inputId = input.id;
+            const removeid = inputId.replace('input','');
+            const list = (0,_getTodo_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+            const todoArray = list.todo;
+            const newlist = todoArray.filter((item) => parseInt(removeid, 10) !== item.index);
+            const index = inputId.replace('input','');
+            const todoObject = {description: description, completed: false, index: index};
+            newlist.push(todoObject);
+            const newarray = newlist.map((item, i) => (item.index = (i + 1)) && item);
+            localStorage.setItem('todo', JSON.stringify(newarray));
+            location.reload();
+           /* const todoList = new TodoList(description, completed, index);
+           // console.log(todoList);
+            if(description != ''){
+            setTodo(todoList);
+             input.parentElement.remove();
+            renderAddedList(todoList);
+            document.querySelector('.save-todo').value = '';
+            }else{
+                console.log("It can not be blank")
+            }
+            */
+            
+        }
+    })
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (editTodo);
 
 /***/ }),
 
@@ -674,19 +746,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _getTodo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getTodo */ "./src/modules/getTodo.js");
+/* harmony import */ var _getTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getTodo.js */ "./src/modules/getTodo.js");
 
+//import setTodo from "./setTodo.js";
 
 const removeTodo = (removeid) => {
-  const booksList = (0,_getTodo__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  const booksArray = booksList.todo;
-  const newlist = booksArray.filter((item) => parseInt(removeid, 10) !== item.index);
-  //console.log(newlist);
-  newlist.forEach(list => {
-    console.log(list.length);
-    
-  });
-  //localStorage.setItem('books', JSON.stringify(newlist));
+  const todoList = (0,_getTodo_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  const todoArray = todoList.todo;
+  const newlist = todoArray.filter((item) => parseInt(removeid, 10) !== item.index);
+ /// console.log(newlist);
+   const newarray = newlist.map((item, i) => (item.index = (i + 1)) && item);
+  // console.log(newarray);
+  localStorage.setItem('todo', JSON.stringify(newarray));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (removeTodo);
@@ -704,16 +775,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../imgs/menu.png */ "./src/imgs/menu.png");
+/* harmony import */ var _imgs_bin_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../imgs/bin.png */ "./src/imgs/bin.png");
+/* harmony import */ var _showEditTools_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./showEditTools.js */ "./src/modules/showEditTools.js");
+/* harmony import */ var _clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./clickRemoveTodo.js */ "./src/modules/clickRemoveTodo.js");
 
-const renderAddedList = (addedTodo) => {
-       const list = addedTodo;
+
+
+
+
+const renderAddedList = (addedList) => {
+       const list = addedList;
        const listContainer = document.querySelector('.todo-list');
-       listContainer.innerHTML = `
-       <div class="list-group">
-               <input type="checkbox">
-               <label for="checkbox">${list.description}</label>
-               <div class="menu"><img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}"></div>
-           </div>`;  
+        listContainer.innerHTML += `
+        <div class="list-group">
+        <div class="list-cont">
+            <input type="checkbox" id="checkbox-${list.index}">
+            <input type="text" readonly="true" id="input-${list.index}" value="${list.description}">
+            <div class="menu"><img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}" class="menu-img" id="menu-${list.index}"> <img src="${_imgs_bin_png__WEBPACK_IMPORTED_MODULE_1__}" class="bin" id="${list.index}"></div>
+            </div>
+        </div>`;
+            
+        (0,_showEditTools_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+        (0,_clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+       
    };
    /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderAddedList);
 
@@ -744,9 +828,13 @@ const renderList = () => {
     const listContainer = document.querySelector('.todo-list');
     listContainer.innerHTML += `
     <div class="list-group">
-            <input type="checkbox">
-            <label for="checkbox">${list.description}</label>
-            <div class="menu"><img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}" id="${list.index}" class="menu-img"> <img src="${_imgs_bin_png__WEBPACK_IMPORTED_MODULE_1__}" class="bin" id="${list.index}"></div>
+    <div class="list-cont">
+            <input type="checkbox" id="checkbox-${list.index}">
+            <input type="text" class ="save-todo" id="input${list.index}" value="${list.description}" readonly="true" >
+            <div class="menu">
+            <img src="${_imgs_menu_png__WEBPACK_IMPORTED_MODULE_0__}" class="menu-img" id="menu-${list.index}"><img src="${_imgs_bin_png__WEBPACK_IMPORTED_MODULE_1__}" class="bin" id="${list.index}">
+            </div>
+            </div>
         </div>`;
   });
 } 
@@ -788,22 +876,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clickRemoveTodo.js */ "./src/modules/clickRemoveTodo.js");
-  
+/* harmony import */ var _editTodo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editTodo.js */ "./src/modules/editTodo.js");
+
   const showEditTools = () => {
     const editTools = document.querySelectorAll('.menu');
-    //const menuImg = document.querySelector('.menu-img');
-   // const binDiv = document.querySelectorAll('.bin');
-    editTools.forEach((element) => {
-    element.addEventListener('click', () => {
-      const menuchild = element.firstElementChild;
-      const binchild = element.lastElementChild;
+    editTools.forEach((myelem) => {
+    myelem.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const menuchild = myelem.firstElementChild;
       menuchild.style.display = 'none';
+      const binchild = myelem.lastElementChild;
       binchild.style.display = 'block';
-      (0,_clickRemoveTodo_js__WEBPACK_IMPORTED_MODULE_0__["default"])(binchild);
+
+      const parentdiv = binchild.parentElement.parentElement;
+       const inpuDiv = parentdiv.children[1];
+      inpuDiv.removeAttribute('readonly');
+      const end = inpuDiv.value.length;
+      inpuDiv.setSelectionRange(end, end);
+      inpuDiv.focus();
+
+      (0,_editTodo_js__WEBPACK_IMPORTED_MODULE_0__["default"])(inpuDiv);
+
     })
-    
 })
+
 
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showEditTools);

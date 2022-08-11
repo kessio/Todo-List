@@ -10,9 +10,13 @@ const renderList = () => {
     const listContainer = document.querySelector('.todo-list');
     listContainer.innerHTML += `
     <div class="list-group">
-            <input type="checkbox">
-            <label for="checkbox">${list.description}</label>
-            <div class="menu"><img src="${menu}" id="${list.index}" class="menu-img"> <img src="${bin}" class="bin" id="${list.index}"></div>
+    <div class="list-cont">
+            <input type="checkbox" id="checkbox-${list.index}">
+            <input type="text" class ="save-todo" id="input${list.index}" value="${list.description}" readonly="true" >
+            <div class="menu">
+            <img src="${menu}" class="menu-img" id="menu-${list.index}"><img src="${bin}" class="bin" id="${list.index}">
+            </div>
+            </div>
         </div>`;
   });
 } 

@@ -1,16 +1,27 @@
-  import clickRemoveTodo from './clickRemoveTodo.js';
+import editTodo from "./editTodo.js";
   const showEditTools = () => {
     const editTools = document.querySelectorAll('.menu');
-    editTools.forEach((element) => {
-    element.addEventListener('click', () => {
-      const menuchild = element.firstElementChild;
-      const binchild = element.lastElementChild;
+    editTools.forEach((myelem) => {
+    myelem.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const menuchild = myelem.firstElementChild;
       menuchild.style.display = 'none';
+      const binchild = myelem.lastElementChild;
       binchild.style.display = 'block';
-      clickRemoveTodo(binchild);
+
+      const parentdiv = binchild.parentElement.parentElement;
+       const inpuDiv = parentdiv.children[1];
+      inpuDiv.removeAttribute('readonly');
+      const end = inpuDiv.value.length;
+      inpuDiv.setSelectionRange(end, end);
+      inpuDiv.focus();
+      
+      editTodo(inpuDiv);
+
     })
-    
 })
+
 
 }
 export default showEditTools;
