@@ -1,5 +1,4 @@
 import getTodo from './getTodo.js';
-import renderAddedList from './renderAddedList.js';
 
 const editTodo = (inputDiv) => {
   const input = inputDiv;
@@ -23,9 +22,7 @@ const editTodo = (inputDiv) => {
         newlist.push(todoObject);
 
         localStorage.setItem('todo', JSON.stringify(newlist));
-        
-          binImg.style.display = 'none';
-          menuImg.style.display = 'block';
+        window.location.reload();
           setReadonly.setAttribute('readonly','true');
       } else {
         document.querySelector('.emptylist').style.display = 'block';

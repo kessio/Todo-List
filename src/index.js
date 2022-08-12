@@ -32,3 +32,9 @@ const imageRefresh = () => {
   return element;
 };
 imageRefresh();
+
+const refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', () => {
+  window.location.reload();
+
+})

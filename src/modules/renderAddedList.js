@@ -6,6 +6,7 @@ import strikeCheckedItems from './strikeCheckedItems.js';
 
 const renderAddedList = (addedList) => {
   const list = addedList;
+  console.log(addedList);
   const listContainer = document.querySelector('.todo-list');
   let isCompleted = list.completed == true ? "checked" : "";
   let completed = list.completed == true ? "-done" : "";

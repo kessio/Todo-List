@@ -1,7 +1,6 @@
 import getTodo from "./getTodo.js";
 const selecetedTasks = () => {
     const todos = getTodo().todo;
-  // console.log(addedlist);
     const checkboxes = document.querySelectorAll('input[name=checkbox]');
       checkboxes.forEach(box => {
         box.addEventListener('change', (e) => {
@@ -15,7 +14,6 @@ const selecetedTasks = () => {
            
             if(box.checked){
                 checkboxTask.classList.add("checked");
-               // todos[e.target.id].status = "completed";
                const newar = todos.map(obj => {
                 if(checkboxIdInt === obj.index){
                     return {...obj, completed: true};
