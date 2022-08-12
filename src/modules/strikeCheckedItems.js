@@ -23,7 +23,7 @@ const selecetedTasks = () => {
             return obj;
         });
        localStorage.setItem('todo', JSON.stringify(newar));
-       //window.location.reload();
+       window.location.reload();
             }else{
                 checkboxTask.classList.remove("checked");
                 const newarray = todos.map(item => {
@@ -33,7 +33,7 @@ const selecetedTasks = () => {
                 return item;
             });
             localStorage.setItem('todo', JSON.stringify(newarray));
-            //window.location.reload();
+            window.location.reload();
 
             }
        
