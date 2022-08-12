@@ -24,10 +24,12 @@ input {
   width: 93%;
   padding-left: 5px;
 }
+
 .checkbox-task {
   width: 93%;
   padding-left: 5px;
 }
+
 .checkbox-task.checked {
   text-decoration: line-through;
   color: blue;
