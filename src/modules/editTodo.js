@@ -1,7 +1,13 @@
 import getTodo from './getTodo.js';
+import renderAddedList from './renderAddedList.js';
 
 const editTodo = (inputDiv) => {
   const input = inputDiv;
+  const setReadonly = input.parentElement.children[1];
+  const menuDiv = input.parentElement.children[2];
+  const menuImg = menuDiv.children[0];
+  const binImg = menuDiv.children[1];
+
   input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
       event.preventDefault();
@@ -15,8 +21,12 @@ const editTodo = (inputDiv) => {
         const mtindex = parseInt(index, 10);
         const todoObject = { description, completed: false, index: mtindex };
         newlist.push(todoObject);
+
         localStorage.setItem('todo', JSON.stringify(newlist));
-        window.location.reload();
+        
+          binImg.style.display = 'none';
+          menuImg.style.display = 'block';
+          setReadonly.setAttribute('readonly','true');
       } else {
         document.querySelector('.emptylist').style.display = 'block';
       }
