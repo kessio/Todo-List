@@ -1,8 +1,14 @@
 import './styles/style.css';
-import renderList from './lists.js';
+import renderList from './modules/renderLists.js';
 import refreshImg from './imgs/refresh.png';
+import addTodoBtn from './modules/addTodo.js';
+import clickRemoveTodo from './modules/clickRemoveTodo.js';
+import showEditTools from './modules/showEditTools.js';
 
 renderList();
+addTodoBtn();
+showEditTools();
+clickRemoveTodo();
 
 const imageRefresh = () => {
   const element = document.querySelector('.refresh');

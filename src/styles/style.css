@@ -14,11 +14,23 @@ body {
   padding: 15px;
 }
 
-#enter-todo {
-  width: 100%;
+input {
   border: none;
   outline: none;
   font-size: 20px;
+}
+
+.save-todo {
+  width: 93%;
+  padding-left: 5px;
+}
+
+.list-cont {
+  display: flex;
+}
+
+#enter-todo {
+  width: 100%;
   font-style: italic;
 }
 
@@ -37,7 +49,7 @@ body {
 
 .list-group {
   border-bottom: 3px solid rgb(223, 219, 219);
-  padding: 15px;
+  padding: 20px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -49,10 +61,24 @@ body {
   cursor: pointer;
 }
 
+.bin {
+  float: right;
+  display: none;
+}
+
 .menu {
   float: right;
 }
 
 .refresh {
   float: right;
+}
+
+[contenteditable] {
+  outline: none;
+}
+
+.emptylist {
+  display: none;
+  color: red;
 }
