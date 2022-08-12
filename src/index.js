@@ -16,9 +16,8 @@ clearComplete();
 
 const displayLists = () => {
   const todos = getTodo().todo;
-  todos.forEach(item => { renderAddedList(item) });
-     
-}
+  todos.forEach((item) => { renderAddedList(item); });
+};
 displayLists();
 
 const imageRefresh = () => {
@@ -36,5 +35,4 @@ imageRefresh();
 const refresh = document.querySelector('.refresh');
 refresh.addEventListener('click', () => {
   window.location.reload();
-
-})
+});

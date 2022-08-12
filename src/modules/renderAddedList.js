@@ -6,10 +6,9 @@ import strikeCheckedItems from './strikeCheckedItems.js';
 
 const renderAddedList = (addedList) => {
   const list = addedList;
-  console.log(addedList);
   const listContainer = document.querySelector('.todo-list');
-  let isCompleted = list.completed == true ? "checked" : "";
-  let completed = list.completed == true ? "-done" : "";
+  const isCompleted = list.completed === true ? 'checked' : '';
+  const completed = list.completed === true ? '-done' : '';
   listContainer.innerHTML += `
         <div class="list-group">
         <div class="list-cont">
@@ -19,7 +18,6 @@ const renderAddedList = (addedList) => {
             </div>
         </div>`;
 
-        
   showEditTools();
   clickRemoveTodo();
   strikeCheckedItems();
