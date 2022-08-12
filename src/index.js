@@ -6,11 +6,13 @@ import showEditTools from './modules/showEditTools.js';
 import renderAddedList from './modules/renderAddedList.js';
 import getTodo from './modules/getTodo.js';
 import strikeCheckedItems from './modules/strikeCheckedItems.js';
+import clearComplete from './modules/clearComplete.js';
 
 addTodoBtn();
 showEditTools();
 clickRemoveTodo();
 strikeCheckedItems();
+clearComplete();
 
 const displayLists = () => {
   const todos = getTodo().todo;
