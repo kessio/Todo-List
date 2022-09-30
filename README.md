@@ -28,6 +28,8 @@
 
 ### All the above project requirements has been implemented on this project
 
+## Live demo [click here to view](https://kessio-microverse-projects.github.io/Todo-List/)
+
 ## Built With
 
 - Major languages: HTML, JavaScript ES6
