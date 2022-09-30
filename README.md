@@ -2,6 +2,10 @@
 
 > Create a clone of [Emilia Andrzejewska](https://www.youtube.com/watch?v=AcUd-_Yjjqg) to-do list UI structure
 
+
+## Live demo
+[click here to view](https://kessio-microverse-projects.github.io/Todo-List/)
+
 #### Objectives
 - Use webpack to bundle JavaScript.
 - Learn how to use proper ES6 syntax.
@@ -27,8 +31,6 @@
 - Store the updated array of items in local storage, so the user gets the correct list values after the page relo
 
 ### All the above project requirements has been implemented on this project
-
-## Live demo [click here to view](https://kessio-microverse-projects.github.io/Todo-List/)
 
 ## Built With
 
